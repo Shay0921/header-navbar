@@ -5,10 +5,10 @@
 详情介绍地址：
 
 # 主要API
-获取设备信息
+**获取设备信息**<br>
 `wx.getSystemInfo`
 
-获得胶囊按钮坐标信息
+**获得胶囊按钮坐标信息**<br>
 `wx.getMenuButtonBoundingClientRect`
 
 
