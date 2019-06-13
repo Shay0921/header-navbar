@@ -5,4 +5,4 @@
 详情介绍地址：
 
 # 项目截图
-![header-navbar](https://raw.githubusercontent.com/Shay0921/header-navbar/master/img/navbar_home_white.png)
+![header-navbar](https://github.com/Shay0921/header-navbar/blob/master/img/img.png?raw=true)
