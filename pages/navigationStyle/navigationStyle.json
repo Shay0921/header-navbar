@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "headerNavbar": "/components/headerNavbar/headerNavbar"
+  }
+}

@@ -1,0 +1,9 @@
+/* 顶部要固定定位   标题要居中   自定义按钮和标题要和右边微信原生的胶囊上下对齐 */
+.home-page {
+  height: 160rpx;
+  border: 1rpx solid red;
+  font-size: 60rpx;
+}
+.home-page text{
+  display: block;
+}
