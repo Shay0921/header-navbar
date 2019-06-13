@@ -1,0 +1,7 @@
+<!-- 测试路由跳转页面 -->
+<headerNavbar navbar-data='{{nvabarData}}'></headerNavbar>
+<view class='text'>
+  <text>我是测试页面，测试路由跳转，通过分享点进来的页面，第一个页面左上角只有首页，当跳转到此页时左上角胶囊应该有返回|首页；点击返回后，左上角还是只有首页</text>
+  <view>如有疑问可添加微信：940107600</view>
+  <view>记得填写备注</view>
+</view>

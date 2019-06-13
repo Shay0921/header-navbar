@@ -1,0 +1,13 @@
+<!-- 自定义导航栏 -->
+<!-- 引入自定义组价。'navbar-data'中navbar是自定义名字，决定了组件中'navbarData'的名字 -->
+<!-- <view style='background:red;height:20px;padding-left:100px'>状态栏 - 20px</view>
+<view style='background:blue;height:44px;padding-left:100px'>标题栏 - 44px</view>
+<view style='background:green;height:200px;padding-left:100px'>主体内容</view> -->
+<headerNavbar navbar-data='{{nvabarData}}'></headerNavbar>
+<view class='home-page'>
+  <text>上面是自定义导航栏↑↑↑</text>
+  <text>下面是主体内容↓↓↓</text>
+  <view>如有疑问可添加微信：940107600</view>
+  <view>记得填写备注</view>
+  <navigator url="./testPage">点击跳转到测试页</navigator>
+</view>

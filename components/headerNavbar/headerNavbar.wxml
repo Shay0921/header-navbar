@@ -1,0 +1,17 @@
+<view class='navbar-wrap' 
+  style='height:{{navbarHeight}}px;padding-top:{{statusBarHeight}}px;background:{{navbarData.bgColor ? navbarData.bgColor : "#fff"}}'>  
+  <view class="navbar-text"
+    style='line-height:{{navbarBtn.height + navbarBtn.top}}px;color:{{navbarData.textColor ? navbarData.textColor : "#000"}};'>
+    {{navbarData.title ? navbarData.title : "默认标题"}}{{navbarHeight}}
+  </view>
+  <view class="navbar-icon"
+    wx:if='{{navbarData.showCapsule ? navbarData.showCapsule : true}}'
+    style="top:{{navbarBtn.top + statusBarHeight}}px;left:{{navbarBtn.right}}px;height:{{navbarBtn.height}}px;background:{{navbarData.btnBgColor ? navbarData.btnBgColor : '#fff'}};border-color:{{navbarData.borderColor ? navbarData.borderColor : 'rgba(0,0,0,0.3)'}}"> 
+      <image wx:if='{{haveBack}}' bindtap="_goBack" class="floatL" src="/img/navbar_back_{{navbarData.iconColor ? navbarData.iconColor : 'black'}}.png"></image>      
+      <view wx:if='{{haveBack}}' class="floatL" style="border-color:{{navbarData.borderColor ? navbarData.borderColor : 'rgba(0,0,0,0.3)'}}"></view>
+      <image bindtap="_goHome" src="/img/navbar_home_{{navbarData.iconColor ? navbarData.iconColor : 'black'}}.png"></image>
+  </view>
+</view>
+<view class="navbar-loading" style='height:{{navbarHeight}}px;line-height:{{navbarHeight}}px;'>
+  <text>...</text>
+</view>
