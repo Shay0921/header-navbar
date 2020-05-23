@@ -1,8 +1,8 @@
 {
   "navigationStyle": "custom",
-  "enablePullDownRefresh": true,
   "backgroundTextStyle": "light",
   "usingComponents": {
-    "headerNavbar": "/components/headerNavbar/headerNavbar"
+    "headerNavbar": "/components/headerNavbar/headerNavbar",
+    "mp-loading": "/components/loading/loading"
   }
 }
