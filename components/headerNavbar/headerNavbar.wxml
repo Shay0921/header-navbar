@@ -12,6 +12,7 @@
       <image bindtap="_goHome" src="/img/navbar_home_{{navbarData.iconColor ? navbarData.iconColor : 'black'}}.png"></image>
   </view>
 </view>
-<view class="navbar-loading" style='height:{{navbarHeight}}px;line-height:{{navbarHeight}}px;'>
-  <text>...</text>
+<view style="margin-top:{{navbarHeight}}px;padding:{{navbarHeight/2}}px 0;" wx:if="{{loading}}">
+  <mp-loading type="dot-gray" ext-class="navbar-loading"></mp-loading>
 </view>
+<view style="margin-top:{{navbarHeight}}px;" wx:else></view>

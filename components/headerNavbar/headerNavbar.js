@@ -5,6 +5,10 @@ Component({
       type: Object,
       value: {},
       observer: function (newVal, oldVal) { }
+    },
+    loading:{
+      type:Boolean,
+      value:false
     }
   },
   data: {

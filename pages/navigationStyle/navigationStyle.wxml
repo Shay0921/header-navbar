@@ -3,8 +3,8 @@
 <!-- <view style='background:red;height:20px;padding-left:100px'>状态栏 - 20px</view>
 <view style='background:blue;height:44px;padding-left:100px'>标题栏 - 44px</view>
 <view style='background:green;height:200px;padding-left:100px'>主体内容</view> -->
-<headerNavbar navbar-data='{{nvabarData}}'></headerNavbar>
-<view class='home-page'>
+<headerNavbar navbar-data='{{nvabarData}}' loading="{{loading}}"></headerNavbar>
+<view class='home-page' catchtouchstart="startPullDown" catchtouchend="endPullDown">
   <text>上面是自定义导航栏↑↑↑</text>
   <text>下面是主体内容↓↓↓</text>
   <view>如有疑问可添加微信：940107600</view>

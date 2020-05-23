@@ -1,5 +1,7 @@
 const app = getApp()
 Page({
+  Y:100,
+  lock:false,
   data: {
     // 组件所需的参数
     nvabarData: {
@@ -16,15 +18,31 @@ Page({
   },
   onLoad() {
   },
-  onPullDownRefresh() {
-    setTimeout(() => {
-      wx.stopPullDownRefresh();
-    }, 2000);
+  startPullDown(e) {
+    let { clientY } = e.changedTouches[0];
+    this.startY = clientY;
+    this.startTime = new Date().getTime()
+  },
+  endPullDown(e) {
+    let { clientY } = e.changedTouches[0];
+    this.endY = clientY;
+    this.endTime = new Date().getTime();
+    if(this.endTime-this.startTime>300 && this.endY-this.startY>50) {
+      this.setData({
+        loading:true
+      })
+      
+      setTimeout(() => {
+        this.setData({
+          loading: false
+        })
+      }, 2000);
+    }
   },
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
 
-  }
+  },
 })
